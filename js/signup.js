@@ -181,7 +181,6 @@ function regExpTest(regExp, el, msg) {
         const result = total%11;//0
         result = 11-0;//11
         result = result%10;//1
-
         if(result == 13번째자리수) return true;
         else return false;
 

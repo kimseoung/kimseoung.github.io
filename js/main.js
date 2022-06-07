@@ -29,6 +29,7 @@ function close () {
 }
 function clickEvent(submenu){
     //submenu 선택시 메인 테이블 숨김처리
+    
     document.getElementById("tableMain").style.visibility = "hidden";
 
     if(submenu === "intro") {
