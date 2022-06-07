@@ -1,0 +1,292 @@
+body{
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+}
+#bgimg{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+.hotbody{
+    position: absolute;
+}
+#body1{
+    width: 100%;
+    align-items: center;
+}
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+    font-family:'Indie Flower', cursive;
+    color: white;
+}
+#table0{
+    width: 70px;
+    height: 70px;
+    margin-top: 100px;
+    animation: fadeout 3s 0s ;
+    border: 2px solid white;
+    border-radius: 50%;
+    border-style: hidden;
+    box-shadow:  0 0 0 2px white;
+}
+#table1{
+    width: 45%;
+}
+#table2{
+    width: 45%;
+    border-radius: 15px;
+    border-style: hidden;
+    box-shadow:  0 0 0 2px white;
+}
+#welcome{
+    height: 320px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    
+}
+.blank{
+    height: 60px;
+}
+.blank1{
+    border-right: 2px solid white;
+}
+#button{
+    height: 60px;
+}
+#button>td{
+    width: 25%;
+    font-size: 10pt;
+}
+#intro{
+    border: 2px solid white;
+}
+#intro:hover{
+    text-shadow : 3px 3px 5px white;
+}
+#hobby{
+    border: 2px solid white;
+}
+#hobby:hover{
+    text-shadow : 3px 3px 5px white;      
+}
+#devel{
+    border: 2px solid white;
+}
+#devel:hover{
+    text-shadow : 3px 3px 5px white;      
+}
+/* #log{
+    border: 2px solid white;
+}
+#log:hover{
+    text-shadow : 3px 3px 5px white;
+  
+} */
+
+@keyframes showWelcome{
+    from{
+        height: 0;
+    }
+    to{
+        height: 320px;
+    }
+}
+@keyframes fadeout{
+    from{
+        margin-top: 260px;
+    }
+    to{
+        margin-top: 100px;
+    }   
+}
+@keyframes showMain{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 1000;
+    
+    /* 숨기기 */
+    z-index: -1;
+    
+}
+
+.show {
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    transition: all 1s;
+}
+
+.window {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    box-shadow: 0 2px 7px rgb(0, 0, 0);
+    border-radius: 30px;
+
+    /* 임시 지정 */
+    width: 800px;
+    height: 550px;
+    
+    /* 초기에 약간 아래에 배치 */
+    transform: translate(-50%, -40%); 
+    overflow: auto;
+}
+#popHobby{
+        /*스크롤바 스타일 변경*/
+        max-height: 480px;
+        overflow-y: auto;
+        direction: ltr;
+        scrollbar-color: rgb(107, 88, 88) rgb(114, 111, 111);
+        scrollbar-width: thin;
+        margin-top: 60px;
+}
+#popHobby::-webkit-scrollbar{
+    /*스크롤바 전체 적용!!*/
+    width: 20px;
+    top: 20%;
+}
+#popHobby::-webkit-scrollbar-track{
+    background-color: rgba(255, 255, 255,0.3);
+    border-radius: 100px;
+    height: 480px;
+}
+#popHobby::-webkit-scrollbar-thumb{
+    border-radius: 100px;
+    border: 6px solid rgba(0, 0, 0, 0.18);
+    border-left: 0;
+    border-right: 0;
+    background-color: rgb(110, 110, 122);
+}
+.show .popup {
+    transform: translate(-50%, -50%);
+    transition: all .5s;
+    position: relative;
+}
+.popup>div{
+    color: white;
+    width: 750px;
+    height: 550px;
+    position: absolute;
+    word-break: break-all;
+    text-align: left;
+    margin-left: 25px;
+    z-index: -1;
+}
+#close{
+    float: right;
+    width: 35px;
+    height: 35px;
+    margin-top: 10px;
+    margin-right: 15px;
+    z-index: 2;
+}
+#subpic1{
+    width: 660px;
+    height: 220px;
+    margin-top: 60px;
+    margin-left: 44px;
+    opacity: 1;
+    border-radius: 2%;
+}
+#hotfrm{
+    position: fixed;
+    display: flex;
+    left: 85%;
+    top: 5%;
+}
+#login{
+    margin-right: 30px;
+    text-decoration: underline;
+    color: white;
+    font-size: 20pt;
+    
+}
+#signup{
+    text-decoration: underline;
+    color: white;
+    font-size: 20pt;
+}
+#travel{
+    width: 100%;
+    height: 100%;
+}
+.hobbypic{
+    width: auto;
+    height: 350px;
+    /* margin-left: 100px; */
+    border-radius: 5%;
+}
+#hobbypic2{
+    width: auto;
+    height: 350px;
+    margin-left: 10px;
+    border-radius: 5%;
+}
+.hobbyText{
+    font-size: 16pt;
+    padding: 5px;
+    float: left;
+    margin-top:0;
+}
+#firstdiv{
+    height: 400px;
+    border-left: 10px solid white;
+    margin-left: 80px;
+    position: absolute;
+}
+#rd1{
+    height: 80px;
+    width: 100px;
+    border-bottom: 10px solid white;
+    white-space: nowrap;
+    padding-left: 10px;
+}
+#rd2{
+    height: 80px;
+    width: 220px;
+    border-bottom: 10px solid white;
+    white-space: nowrap;
+    padding-left: 10px;
+}
+
+#rd3{
+    height: 80px;
+    width: 320px;
+    border-bottom: 10px solid white;
+    white-space: nowrap;
+    padding-left: 10px;
+}
+
+#rd4{
+    height: 80px;
+    width: 450px;
+    border-bottom: 10px solid white;
+    white-space: nowrap;
+    padding-left: 10px;g
+}
+
+
+

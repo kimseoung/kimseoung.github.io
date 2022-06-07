@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Indie+Flower&family=Lobster&family=Smooch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Main</title>
+        <script src="js/main.js"></script>
+</head>
+<body>
+    <img src="image/pic1.jpg"  alt="" class="hotbody" id="bgimg">
+    <div class="hotbody"  id="body1">
+        <div id="tableMain">
+            <table id="table0">
+                <tr>
+                    <td colspan="2">
+                        <p style="font-size: 15pt;">hello</p>
+                    </td>
+                </tr>
+            </table>
+            <table id="table1">
+                <tr class="blank">
+                    <td class="blank1"></td>
+                    <td ></td>
+                </tr>
+                <tr id="welcome">
+                    <td colspan="2" id="text1">
+                    </td>
+                </tr>
+                <tr class="blank">
+                    <td class="blank1"></td>
+                    <td ></td>
+                </tr>
+            </table>
+            <table id="table2">
+                <tr id="button">
+                    <td id="intro" onclick="clickEvent('intro')" style="font-size: 20px; font-weight:bold;"><p>INTRODUCE</p></td>
+                    <td id="hobby" onclick="clickEvent('hobby')" style="font-size: 20px; font-weight:bold;">HOBBY</td>
+                    <td id="devel" onclick="clickEvent('devel')" style="font-size: 20px; font-weight:bold;">DEVELOPER MAP</td>
+                    <!-- <td id="log" onclick="clickEvent('log')" style="font-size: 18px;">LOGIN</td> -->
+                </tr>
+            </table>
+        </div>
+        <div class="background">
+            <div class="window">
+                <div class="popup">
+                    <img src="image/close.png" id="close" alt="">
+                    <div id="popIntro">
+                        <img src="image/pic4.jpg" id ="subpic1" alt="">
+                        <p style="text-decoration: underline; font-size: 16pt; margin-bottom: 0;">INTRODUCE</p><br>
+                        <p class="hobbyText">안녕하세요 여러분 김승환 입니다. 나이는 27살이며 경기도 하남시에 거주중입니다. kh 강의 전에는 1년 6개월 정도 회사 생활을 하였으며
+                        의료장비 수리를 하였습니다. 각종 대학병원을 직접 방문하여 수리,점검 하였습니다. 강의를 신청하게 된 이유는 새로운 것에 
+                        도전해 보고 싶어서였습니다. 이번 프로젝트를 하면서 개인적으로 많은 도움이 된것 같습니다 감사합니다.</p>
+                    </div>
+                    <div id="popHobby">
+                        <div id="travel">
+                            <img src="image/tourpic1.jpg" class="hobbypic" alt="">
+                            <p style="text-decoration: underline; font-size: 16pt; margin-bottom: 0;">Travel</p>
+                            <p class="hobbyText">20살 이후로 여행을 많이 다닌거 같습니다. 다음 사진은 제주도 여행때 찍은 사진입니다.</p>
+                        </div>
+                        <div id="workout">
+                            <img src="image/workout.jpg" class="hobbypic" alt="">
+                            <p style="text-decoration: underline; font-size: 16pt; margin-bottom: 0;">WorkOut</p>
+                            <p class="hobbyText">일주일에 6일 정도 운동 하고있습니다.몸이 아프지 않는이상 꾸준히 다니려고 노력하는 편입니다</p>
+                        </div>
+                        <div id="tattoo">
+                            <img src="image/tattoopic.jpg" class="hobbypic" alt="" >
+                            <img src="image/tattoopic2.jpg" id="hobbypic2" alt="">
+                            <p style="text-decoration: underline; font-size: 16pt; margin-bottom: 0;">Tattoo</p>
+                            <p class="hobbyText">취미생활로 타투 작업 하고있습니다.타투 도안그리기도 하고있습니다.</p>
+                        </div>
+                        
+                         
+                    </div>
+                    <div id="popDevelop">
+                        <p style="text-decoration: underline; font-size: 20pt; margin-bottom: 0;">My Developer Map</p><br>
+                        <p id="rd0">저의 개발자 roadmap 입니다 아직은 정확한 진로를 정하지 못한거 같습니다.</p>
+                        <img src="image/icons8-arrow-64.png" alt="" style="position:absolute;">
+                          <div id="firstdiv">
+                              <div id="rd1">
+                                1Y
+                                <dt>
+                                    <dd>python</dd>
+                                    <dd>GITHUB</dd>
+                                </dt>
+                              </div>
+                              <div id="rd2">
+                                  2Y 
+                                <dt>
+                                    <dd>SQLD</dd>
+                                    <dd>React</dd>
+                                </dt>
+                              </div>
+                              <div id="rd3">
+                                  3Y
+                                <dt>
+                                    <dd>C,C++</dd>
+                                    <dd>정보처리기사</dd>
+                                </dt>
+                              </div>
+                              <div id="rd4">
+                                  4Y
+                                <dt>
+                                    <dd>Web security</dd>
+                                </dt>
+                              </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="hotfrm">
+        <form action="">
+            <!--아이디와 비밀번호 가 일치하는지 검사!-->
+            <a href="login.html" id="login">LOGIN</a>
+        </form>
+        <form action="">
+            <a href="signUp.html" id="signup">SIGN UP</a>
+        </form>
+    </div>
+</body>
+</html>

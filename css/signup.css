@@ -1,0 +1,153 @@
+body{
+    overflow: hidden;
+    position:relative;
+    margin: 0px;
+}
+#bgimg{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position:absolute;
+}
+#backdiv{
+    position:absolute;
+    margin-left: 40px;  
+    margin-top: 55px;
+    z-index: 1000;
+}
+#back{
+    text-decoration: underline;
+    color: white;
+    font-size: 20pt;
+    font-family:'Indie Flower', cursive;
+}
+#signUp{
+    color: white;
+    position: absolute;
+    width:100%;
+}
+textarea {
+   background-color: rgba(255, 255, 255, 0.5);
+   width: 250px;
+   height: 75px;
+   font-size: 15pt;
+}
+input {
+    background-color: white;
+    width: 250px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 0;
+    font-size: 15pt;
+}
+
+#snnum,#snnum2{
+    width: 118px;
+}
+
+#signuptb{
+    font-size: 20pt;
+    text-align: left;
+    
+}
+#userSignUpFrm{
+    float: left;
+    transform: translate(10%,30%);
+    box-shadow: 0 2px 7px rgb(0, 0, 0);
+    border-radius: 30px;
+    padding: 20px;
+}
+#userListFrm{
+    margin-left: 10px;
+    margin-right: 3%;
+    float: right;
+    box-shadow: 0 2px 7px rgb(0, 0, 0);
+    border-radius: 30px;
+    margin-top: 170px;
+    padding: 20px;
+}
+#tb-userList{
+    font-size: 15pt;
+    border: 1px solid white;
+    border-collapse: collapse;
+    margin-right: 10px;
+}
+#tb-userList th{
+    border: 1px solid white;
+}
+#tb-userList td{
+    border: 1px solid white;
+}
+.tdnum{
+    width: 10px;
+    height: auto;
+    word-break: break-all;
+}
+.tdusername{
+    max-width: 100px;
+    height: auto;
+    word-break: break-all;
+}
+.tduserId{
+    max-width: 250px;
+    height: auto;
+    word-break: break-all;
+}
+.tdpassword{
+    max-width: 150px;
+    height: auto;
+    word-break: break-all;
+}
+.tdsnnum{
+    max-width: 170px;
+    height: auto;
+    word-break: break-all;
+}
+.tdphnum{
+    max-width: 140px;
+    height: auto;
+    word-break: break-all;
+}
+.tdaddress{
+    max-width: 200px;
+    height: auto;
+    word-break: break-all;
+}
+#savebt{
+    width: 100px;
+    font-size: 15pt;   
+    color: white;
+}
+button{
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 0;
+    font-weight: bold;
+}
+#listscroll{
+    /*스크롤바 스타일 변경*/
+    max-height: 525px;
+    overflow-y: auto;
+    direction: ltr;
+    scrollbar-color: rgb(107, 88, 88) rgb(114, 111, 111);
+    scrollbar-width: thin;
+}
+#listscroll::-webkit-scrollbar{
+/*스크롤바 전체 적용!!*/
+width: 20px;
+top: 20%;
+}
+#listscroll::-webkit-scrollbar-track{
+background-color: rgba(255, 255, 255,0.3);
+border-radius: 100px;
+height: 480px;
+}
+#listscroll::-webkit-scrollbar-thumb{
+border-radius: 100px;
+border: 6px solid rgba(0, 0, 0, 0.18);
+border-left: 0;
+border-right: 0;
+background-color: rgb(110, 110, 122);
+}
+
+

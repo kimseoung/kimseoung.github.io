@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Indie+Flower&family=Lobster&family=Smooch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <script src="js/login.js"></script>
+</head>
+<body>
+    <img src="image/pic1.jpg"  alt="" class="hotbody" id="bgimg">
+    <div id="backdiv">
+        <a id="back" href="main.html">BACK</a>
+    </div>
+    <div id="loginFrm">
+        <form action="javascript:login();" id="loginAction">
+            <fieldset>
+                <legend>로그인</legend>
+                <table>
+                    <tr>
+                        <td><input type="email" id="userId" placeholder="이메일(abcd@naver.com)"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" id="password" placeholder="숫자/문자/특수문자(8~15자리)"></td>
+                    </tr>
+                </table>
+                <button id="login">로그인</button>
+            </fieldset>
+        </form>
+    </div>
+    <a href="SIGNUP.HTML" id="signup">SIGNUP</a>
+
+</body>
+</html>
