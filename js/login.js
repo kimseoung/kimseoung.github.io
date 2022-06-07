@@ -15,7 +15,7 @@ function login(){
         }
     })
     if(successcount>0){
-        location.href="MAIN.HTML";
+        location.href="index.html";
         alert("로그인 성공!");
     }else{
         // 아이디가 회원가입 정보에 들어가있는 것과 일치하는지 확인 아이디가
